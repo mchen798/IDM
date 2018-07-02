@@ -5,9 +5,12 @@ public class DiceGame {
 	private Die die1;
 	private Die die2;
 
-	public DiceGame() {
+	private String player;
+
+	public DiceGame( String player ) {
 		die1 = new Die();
 		die2 = new Die();	
+		this.player = player;
 	}
 
 	public void play() {
@@ -21,6 +24,7 @@ public class DiceGame {
 
 		int totalValue = die1.getFaceValue()+die2.getFaceValue();
 
-		System.out.println( totalValue );
+		if( totalValue > 7 ) System.out.println( player + " won!" );
+		else System.out.println( player + " lost!" );
 	}
 }
