@@ -12,7 +12,7 @@ public class Main {
  		player = scanner.next();
 		System.out.println( "Hello, " + player + "!" );		
 
-		DiceGame game = new DiceGame();
+		DiceGame game = new DiceGame(player);
 		game.play();
 	}
 }
