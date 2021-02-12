@@ -3,6 +3,7 @@ OS: Ubuntu Server 18.04 LTS (HVM), SSD Volume Type (Select as default from AWS)
 Python >= 3.6.9
 
 To build the environment need run the install_vppbs.sh. 
+
 (It will install golang1.5, go-ethereum and swarm.)
 ```
 sudo ./install_vppbs.sh
@@ -25,6 +26,7 @@ To init and run the blockchain:
 
 
 Open a new command window.
+
 If the dirctory vppbs don't exist the python files, please run the cp_cmd.sh.
 ```
 cd ./vppbs
@@ -56,6 +58,7 @@ python3 sendTrans.py 0 1
 ```
 Once the transaction is successful go to the blockchain, every node in this blockchain network could check the transaction.(e.g. by command )
 (If your accounts[0] Insufficient Balance, please make mining command for several mins.)
+
 To Download the model file from swarm network(You need know the upload file hash by check the transaction data tag):
 ```
 ./download.sh d_subcnn.pt a95bc29aaaf562bc5147f08f8fbbea666098985afc44e1284bd9cf236b091ab6
